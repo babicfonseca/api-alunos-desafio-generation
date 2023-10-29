@@ -13,7 +13,7 @@ Desafio prático para o processo seletivo da Generation para o curso Desenvolved
 <br>
 
 <p align="center">
-  <img alt="Desafio Generation" src="../api/src/assets/desafio-generation.png" width="100%">
+  <img alt="Desafio Generation" src="./src/assets/desafio-generation.png" width="100%">
 </p>
 
 ## 💻 Projeto
