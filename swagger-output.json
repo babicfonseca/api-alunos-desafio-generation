@@ -1,0 +1,145 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API CRUD Alunos - Desafio Generation",
+    "description": "O desafio proposto visa a criação de uma API para realizar operações básicas (Create, Read, Update e Delete - CRUD) em uma tabela de alunos armazenada em um banco de dados PostgreSQL.",
+    "version": "1.0.0"
+  },
+  "host": "https://api-alunos-generation.onrender.com",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/alunos": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id_aluno": {
+                  "example": "any"
+                },
+                "nome_aluno": {
+                  "example": "any"
+                },
+                "idade_aluno": {
+                  "example": "any"
+                },
+                "nota_1semestre": {
+                  "example": "any"
+                },
+                "nota_2semestre": {
+                  "example": "any"
+                },
+                "nome_professor": {
+                  "example": "any"
+                },
+                "numero_sala": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/alunos/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id_aluno": {
+                  "example": "any"
+                },
+                "nome_aluno": {
+                  "example": "any"
+                },
+                "idade_aluno": {
+                  "example": "any"
+                },
+                "nota_1semestre": {
+                  "example": "any"
+                },
+                "nota_2semestre": {
+                  "example": "any"
+                },
+                "nome_professor": {
+                  "example": "any"
+                },
+                "numero_sala": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

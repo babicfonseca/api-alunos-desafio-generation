@@ -16,6 +16,8 @@ exports.createAluno = async (req, res) => {
   });
 };
 
+// VALIDAR SE O ID JÁ EXISTE - VER CÓDIGO DO ERRO
+
 // ==> Método responsável por listar todos os 'Alunos':
 exports.listAllAlunos = async (req, res) => {
     const response = await db.query('SELECT * FROM alunos ORDER BY nome_aluno ASC');
@@ -29,6 +31,8 @@ exports.findAlunoById = async (req, res) => {
     res.status(200).send(response.rows);
 };
 
+// FAZER UM ERRO DE NOT FOUND SE NÃO ENCONTRAR O ALUNO - CÓDIGO
+
 // ==> Método responsável por atualizar um 'Aluno' pelo 'Id':
 exports.updateAlunoById = async (req, res) => {
     const idAluno = parseInt(req.params.id);
@@ -40,6 +44,8 @@ exports.updateAlunoById = async (req, res) => {
     res.status(200).send({ message: "Aluno Updated Successfully!" });
 };
 
+// FAZER UM ERRO SE O ALUNO NÃO EXISTIR! - VER CÓDIGO DO ERRO
+
 // ==> Método responsável por excluir um 'Product' pelo 'Id':
 exports.deleteAlunoById = async (req, res) => {
     const idAluno = parseInt(req.params.id);
@@ -47,4 +53,6 @@ exports.deleteAlunoById = async (req, res) => {
         idAluno
     ]);
     res.status(200).send({ message: 'Aluno deleted successfully!', idAluno });
-  };
+};
+
+// FAZER UM ERRO SE O ALUNO NÃO EXISTIR! - VER CÓDIGO DO ERRO

@@ -8,26 +8,28 @@
     "dev": "nodemon",
     "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix",
     "prepush": "npm run lint",
-    "start": "node server.js"
+    "start": "node server.js",
+    "swagger": "node ./swagger.js"
   },
   "keywords": [
-      "node.js",
-      "javascript",
-      "postgresel",
-      "azure",
-      "serverless",
-      "azure-functions",
-      "azure-devops",
-      "azure-storage",
-      "github-actions",
-      "app-service",
-      "express"
+    "node.js",
+    "javascript",
+    "postgresel",
+    "azure",
+    "serverless",
+    "azure-functions",
+    "azure-devops",
+    "azure-storage",
+    "github-actions",
+    "app-service",
+    "express"
   ],
   "author": "Bárbara Fonseca",
   "license": "ISC",
   "devDependencies": {
     "husky": "^8.0.3",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "swagger-autogen": "^2.23.7"
   },
   "dependencies": {
     "cors": "^2.8.5",
