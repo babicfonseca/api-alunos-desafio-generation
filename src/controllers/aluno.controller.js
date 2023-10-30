@@ -9,14 +9,12 @@ exports.createAluno = async (req, res) => {
   );
 
   res.status(201).send({
-    message: "Aluno added successfully!",
+    message: "Aluno adicionado com sucesso!",
     body: {
       aluno: { id_aluno, nome_aluno, idade_aluno, nota_1semestre, nota_2semestre, nome_professor, numero_sala }
     },
   });
 };
-
-// VALIDAR SE O ID JÁ EXISTE - VER CÓDIGO DO ERRO
 
 // ==> Método responsável por listar todos os 'Alunos':
 exports.listAllAlunos = async (req, res) => {
@@ -31,7 +29,6 @@ exports.findAlunoById = async (req, res) => {
     res.status(200).send(response.rows);
 };
 
-// FAZER UM ERRO DE NOT FOUND SE NÃO ENCONTRAR O ALUNO - CÓDIGO
 
 // ==> Método responsável por atualizar um 'Aluno' pelo 'Id':
 exports.updateAlunoById = async (req, res) => {
@@ -44,7 +41,6 @@ exports.updateAlunoById = async (req, res) => {
     res.status(200).send({ message: "Aluno Updated Successfully!" });
 };
 
-// FAZER UM ERRO SE O ALUNO NÃO EXISTIR! - VER CÓDIGO DO ERRO
 
 // ==> Método responsável por excluir um 'Product' pelo 'Id':
 exports.deleteAlunoById = async (req, res) => {
@@ -54,5 +50,3 @@ exports.deleteAlunoById = async (req, res) => {
     ]);
     res.status(200).send({ message: 'Aluno deleted successfully!', idAluno });
 };
-
-// FAZER UM ERRO SE O ALUNO NÃO EXISTIR! - VER CÓDIGO DO ERRO

@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "API CRUD Alunos - Desafio Generation",
-    "description": "O desafio proposto visa a criação de uma API para realizar operações básicas (Create, Read, Update e Delete - CRUD) em uma tabela de alunos armazenada em um banco de dados PostgreSQL.",
+    "description": "O desafio proposto visa a criação de uma API para realizar operações básicas (Create, Read, Update e Delete - CRUD) em uma tabela de alunos armazenada em um banco de dados PostgreSQL. \n Os endpoints utilizados neste projeto foram: \n - GET: retorna uma lista com todos os dados dos alunos constantes na tabela; \n - GET {id}: retorna informações de um aluno específico que será buscado por meio de seu id; \n - POST: cria um novo aluno com seus dados na tabela; \n - PUT {id}: atualiza dados de um aluno já constante na tabela que será encontrado por meio de seu id; \n - DELETE {id}: exclui da tabela os dados de um aluno específico que será encontrado por meio de seu id.",
     "version": "1.0.0"
   },
   "host": "api-alunos-generation.onrender.com",
