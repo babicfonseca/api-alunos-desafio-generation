@@ -20,7 +20,7 @@ Desafio prático para o processo seletivo da Generation para o curso Desenvolved
 
 O desafio proposto visa a criação de uma API para realizar operações básicas (Create, Read, Update e Delete - CRUD) em uma tabela de alunos armazenada em um banco de dados PostgreSQL.
 
-
+- [Acesse a documentação Swagger e interaja com a API](https://app.swaggerhub.com/apis-docs/CFONSECABARBARA/api-crud_alunos_desafio_generation/1.0.0)
 
 
 ## 🚀 Tecnologias
