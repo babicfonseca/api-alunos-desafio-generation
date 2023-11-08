@@ -15,7 +15,7 @@ router.get('/alunos/:id', alunoController.findAlunoById);
 // ==> Rota responsável por atualizar 'Aluno' pelo 'Id': (PUT): localhost:3000/api/alunos/:id
 router.put('/alunos/:id', alunoController.updateAlunoById);
 
-// ==> Rota responsável por excluir 'Product' pelo 'Id': (DELETE): localhost:3000/api/products/:id
+// ==> Rota responsável por excluir 'Aluno' pelo 'Id': (DELETE): localhost:3000/api/alunos/:id
 router.delete('/alunos/:id', alunoController.deleteAlunoById);
 
 module.exports = router;
